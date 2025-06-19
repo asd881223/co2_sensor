@@ -1,0 +1,59 @@
+// ===== main.cpp =====
+#include "co2_sensor.h"
+#include "sht30_sensor.h"
+#include "em_device.h"
+#include "em_chip.h"
+#include "sl_system_init.h"
+#include <stdio.h>
+
+// printf 導向 VCOM
+extern "C" int __io_putchar(int ch) {
+    EUSART0->TXDATA = (uint8_t)ch;
+    while (!(EUSART0->STATUS & EUSART_STATUS_TXC));
+    return ch;
+}
+
+int main(void) {
+    // 初始化晶片與系統
+    CHIP_Init();
+    sl_system_init();
+
+    // 初始化 CO₂ 感測器
+    co2_init();
+    co2_calibrate(DEFAULT_PERIOD_S);
+
+    // 初始化 SHT30 感測器
+    sht30_init();
+
+    // 讀取初始 CO₂ 狀態
+    uint16_t abc, period, samples;
+    if (co2_read_initial_state(&abc, &period, &samples)) {
+        printf("CO2 State: Period=%us, Samples=%u, ABC Hours=%u\r\n", period, samples, abc);
+    } else {
+        printf("WARNING: failed to read CO2 initial state, using default %us\r\n", DEFAULT_PERIOD_S);
+        period = DEFAULT_PERIOD_S;
+    }
+
+    // 持續讀取 CO₂、溫度、濕度
+    while (1) {
+        // 讀 CO₂ 值
+        uint16_t ppm;
+        if (co2_read_ppm(&ppm)) {
+            printf("CO2: %u ppm\r\n", ppm);
+        } else {
+            printf("ERROR: CO2 read failed\r\n");
+        }
+        // 讀溫濕度
+        float tempC, rh;
+        if (sht30_read(&tempC, &rh)) {
+            printf("Temperature: %.2f C\r\n", tempC);
+            printf("Humidity: %.2f %%RH\r\n", rh);
+        } else {
+            printf("ERROR: SHT30 read failed\r\n");
+        }
+        // 延遲至下次量測
+        delay_ms(period * 1000);
+    }
+
+    return 0;
+}

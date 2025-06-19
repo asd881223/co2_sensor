@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="uc.module.setup.ucConfig.com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt.debug#com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:12.2.1.20221205.gcc" propertyScope="project">
+  <folder name="config">
+    <file name="sl_memory_config.h" generated="true" linked="false"/>
+    <file name="sl_memory_manager_region_config.h" generated="true" linked="false"/>
+    <file name="sl_clock_manager_oscillator_config.h" generated="true" linked="false"/>
+    <file name="sl_clock_manager_tree_config.h" generated="true" linked="false"/>
+    <file name="sl_i2cspm_mikroe_config.h" generated="true" linked="false"/>
+    <file name="sl_simple_button_btn0_config.h" generated="true" linked="false"/>
+    <file name="sl_simple_button_btn1_config.h" generated="true" linked="false"/>
+    <file name="sl_simple_led_led0_config.h" generated="true" linked="false"/>
+    <file name="sl_spidrv_mikroe_config.h" generated="true" linked="false"/>
+    <file name="sl_uartdrv_eusart_vcom_config.h" generated="true" linked="false"/>
+    <file name="sl_board_control_config.h" generated="true" linked="false"/>
+    <file name="sl_device_init_dcdc_config.h" generated="true" linked="false"/>
+    <file name="sl_device_init_emu_config.h" generated="true" linked="false"/>
+    <file name="sl_debug_swo_config.h" generated="true" linked="false"/>
+    <file name="spidrv_config.h" generated="true" linked="false"/>
+    <file name="sl_iostream_eusart_vcom_config.h" generated="true" linked="false"/>
+    <file name="dmadrv_config.h" generated="true" linked="false"/>
+    <file name="sl_core_config.h" generated="true" linked="false"/>
+    <file name="sl_simple_button_config.h" generated="true" linked="false"/>
+    <file name="sl_interrupt_manager_s2_config.h" generated="true" linked="false"/>
+    <file name="emlib_core_debug_config.h" generated="true" linked="false"/>
+    <file name="uartdrv_config.h" generated="true" linked="false"/>
+    <file name="sl_sleeptimer_config.h" generated="true" linked="false"/>
+  </folder>
+  <includePath uri="studio:/project/config"/>
+</project>

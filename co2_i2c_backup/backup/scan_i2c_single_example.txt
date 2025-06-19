@@ -1,0 +1,192 @@
+#include "em_device.h"
+#include "em_chip.h"
+
+#include "sl_system_init.h"
+#include "sl_i2cspm.h"
+#include "em_i2c.h"
+#include "em_gpio.h"
+
+#include <stdio.h>
+
+//----------------------------------------------------------------------
+// 硬件连接示意（TDE5531）
+//----------------------------------------------------------------------
+// PIN1  GND    -> MCU GND
+// PIN2  VBB    -> MCU 3.3V
+// PIN3  VDDIO  -> MCU 3.3V
+// PIN5  COMSEL -> GND (I2C 模式)
+// PIN6  nRDY   -> 可悬空（暂不使用）
+// PIN7  SDA    -> 10kΩ 上拉 -> MCU PB05 (I2C SDA)
+// PIN8  SCL    -> 10kΩ 上拉 -> MCU PB04 (I2C SCL)
+// PIN9  EN     -> MCU PA00 (由程序控制上/下电)
+//----------------------------------------------------------------------
+
+// 定义寄存器地址 & 常量
+#define ERROR_STATUS         0x01
+#define MEASUREMENT_MODE     0x95
+#define METER_CONTROL        0xA5
+#define START_MEASUREMENT    0xC3
+#define ABC_TIME             0xC4
+
+#define CONTINUOUS           0x0000
+#define SINGLE               0x0001
+
+#define EEPROM_UPDATE_DELAY_MS 25
+#define STABILIZATION_MS       35
+#define WAIT_FOR_PIN_MS      2000
+
+#define CO2_EN_PORT         gpioPortA
+#define CO2_EN_PIN          0
+
+static uint8_t stateData[24];
+
+// 简单延时 (大约 1 ms, 48 MHz)
+static void delay_ms(uint32_t ms) {
+  volatile uint32_t cnt;
+  while (ms--) {
+    cnt = 48000;
+    while (cnt--) { __NOP(); }
+  }
+}
+
+// 重初始化 I2C（复刻 Arduino Wire.begin())
+static void reInitI2C(void) {
+  sl_i2cspm_init_instances();
+}
+
+// 通用写寄存器：reg + data(len=1)
+static bool write_eeprom_register(uint8_t addr7, uint8_t reg, uint8_t value) {
+  uint8_t buf[2] = { reg, value };
+  I2C_TransferSeq_TypeDef seq = {
+    .addr = (addr7 << 1),
+    .flags = I2C_FLAG_WRITE,
+    .buf[0] = { .data = buf, .len = 2 },
+    .buf[1] = { .data = NULL, .len = 0 }
+  };
+  I2C_TransferInit(I2C0, &seq);
+  I2C_TransferReturn_TypeDef res;
+  do { res = I2C_Transfer(I2C0); } 
+  while (res == i2cTransferInProgress);
+  delay_ms(EEPROM_UPDATE_DELAY_MS); // EEPROM 写入延时
+  return (res == i2cTransferDone);
+}
+
+// “唤醒”：0‐byte 写事务
+static void wake_sensor(uint8_t addr7) {
+  I2C_TransferSeq_TypeDef seq = {
+    .addr = (addr7 << 1),
+    .flags = I2C_FLAG_WRITE,
+    .buf[0] = { .data = NULL, .len = 0 },
+    .buf[1] = { .data = NULL, .len = 0 }
+  };
+  I2C_TransferInit(I2C0, &seq);
+  while (I2C_Transfer(I2C0) == i2cTransferInProgress) { }
+}
+
+// 检查 ACK
+static bool i2c_address_exists(uint8_t addr7) {
+  uint8_t dummy = 0;
+  I2C_TransferSeq_TypeDef seq = {
+    .addr = (addr7 << 1),
+    .flags = I2C_FLAG_WRITE,
+    .buf[0] = { .data = &dummy, .len = 1 },
+    .buf[1] = { .data = NULL,  .len = 0 }
+  };
+  I2C_TransferInit(I2C0, &seq);
+  I2C_TransferReturn_TypeDef res;
+  do { res = I2C_Transfer(I2C0); } 
+  while (res == i2cTransferInProgress);
+  return (res == i2cTransferDone);
+}
+
+// 触发单次测量 (写寄存器 0xC3=0x01)
+static bool trigger_single_measurement(uint8_t addr7) {
+  uint8_t cmd[2] = { START_MEASUREMENT, 1 };
+  I2C_TransferSeq_TypeDef seq = {
+    .addr = (addr7 << 1),
+    .flags = I2C_FLAG_WRITE,
+    .buf[0] = { .data = cmd, .len = 2 },
+    .buf[1] = { .data = NULL, .len = 0 }
+  };
+  I2C_TransferInit(I2C0, &seq);
+  I2C_TransferReturn_TypeDef res;
+  do { res = I2C_Transfer(I2C0); } 
+  while (res == i2cTransferInProgress);
+  return (res == i2cTransferDone);
+}
+
+// 读 CO₂ 浓度 (0x06/0x07)
+static uint16_t read_co2_ppm(uint8_t addr7) {
+  uint8_t reg = 0x06;
+  uint8_t rx[2];
+  // 写寄存器地址
+  I2C_TransferSeq_TypeDef seq = {
+    .addr = (addr7 << 1),
+    .flags = I2C_FLAG_WRITE,
+    .buf[0] = { .data = &reg, .len = 1 },
+    .buf[1] = { .data = NULL, .len = 0 }
+  };
+  I2C_TransferInit(I2C0, &seq);
+  while (I2C_Transfer(I2C0) == i2cTransferInProgress) { }
+  // Repeated-Start + 读 2 字节
+  seq.addr  = (addr7 << 1) | 1;
+  seq.flags = I2C_FLAG_READ;
+  seq.buf[0] = { .data = NULL, .len = 0 };
+  seq.buf[1] = { .data = rx, .len = 2 };
+  I2C_TransferInit(I2C0, &seq);
+  while (I2C_Transfer(I2C0) == i2cTransferInProgress) { }
+  return ((uint16_t)rx[0] << 8) | rx[1];
+}
+
+// 重定向 printf -> USART0
+extern "C" int __io_putchar(int ch) {
+  USART0->TXDATA = (uint8_t)ch;
+  while (!(USART0->STATUS & USART_STATUS_TXC)) { }
+  return ch;
+}
+
+int main(void) {
+  CHIP_Init();
+  sl_system_init(); 
+  // 初始化 I2C0 (PB04=SCL, PB05=SDA) & USART0 (PD04=TX, PD05=RX)
+
+  uint8_t addr = 0x68;
+
+  // 1) 复位 EN
+  GPIO_PinModeSet(CO2_EN_PORT, CO2_EN_PIN, gpioModePushPull, 0);
+  delay_ms(50);
+
+  // 2) 写入 Measurement Mode = SINGLE
+  if (!write_eeprom_register(addr, MEASUREMENT_MODE, SINGLE)) {
+    printf("Error: set single-shot mode failed\r\n");
+    while (1);
+  }
+  printf("Mode=SINGLE, rebooting sensor...\r\n");
+
+  // 3) 上电 EN
+  GPIO_PinOutSet(CO2_EN_PORT, CO2_EN_PIN);
+  delay_ms(50);
+
+  // 4) 唤醒 & 检查 ACK
+  wake_sensor(addr);
+  delay_ms(20);
+  if (!i2c_address_exists(addr)) {
+    printf("Error: no device at 0x%02X\r\n", addr);
+    while (1);
+  }
+  printf("Found sensor @0x%02X\r\n", addr);
+
+  // 5) 进入单次测量循环
+  printf("Single-shot CO2, 1s interval:\r\n");
+  while (1) {
+    if (!trigger_single_measurement(addr)) {
+      printf("Trigger failed\r\n");
+      delay_ms(100);
+      continue;
+    }
+    delay_ms(STABILIZATION_MS);
+    uint16_t co2 = read_co2_ppm(addr);
+    printf("CO2 = %u ppm\r\n", co2);
+    delay_ms(1000);
+  }
+}

@@ -1,0 +1,1117 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2025-06-17T02:25:25.457647640Z",
+    "authors" : [ {
+      "name" : "Silicon Laboratories, Inc."
+    } ],
+    "properties" : [ {
+      "name" : "Silicon Labs Disclaimer",
+      "value" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)"
+    } ]
+  },
+  "components" : [ {
+    "scope" : "required",
+    "type" : "library",
+    "bom-ref" : "simplicity_sdk:2024.12.2",
+    "name" : "Simplicity SDK Suite",
+    "version" : "2024.12.2",
+    "supplier" : {
+      "name" : "Silicon Laboratories, Inc."
+    },
+    "components" : [ {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:EFR32MG24B210F1536IM48",
+      "name" : "EFR32MG24B210F1536IM48",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_aes_sha_ecdsa",
+      "name" : "Crypto",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA AND APACHE-2.0"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_common_storage_single",
+      "name" : "Common Storage (single storage slot only)",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_core",
+      "name" : "Bootloader Core",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_crc",
+      "name" : "Cyclic Redundancy Check",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_debug",
+      "name" : "Debug",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_image_parser",
+      "name" : "Image Parser",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_internal_storage",
+      "name" : "Internal Storage",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_storage_slots",
+      "name" : "Bootloader Storage Slot Setup",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_token_management",
+      "name" : "Token Management",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:brd2703a_a02",
+      "name" : "BRD2703A rev A02",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:mbedtls_source",
+      "name" : "Source Code",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Apache-2.0"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "mbedtls_source:v3.6.2",
+          "name" : "Mbed TLS",
+          "version" : "v3.6.2",
+          "supplier" : {
+            "name" : "Trusted Firmware"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://github.com/Mbed-TLS/mbedtls.git"
+          } ],
+          "pedigree" : {
+            "notes" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_aes_ctr_stream_block_cfg",
+      "name" : "Bootloader AES CTR Stream Block Config",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_i2c",
+      "name" : "I2C",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_rmu",
+      "name" : "RMU",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_iadc",
+      "name" : "IADC",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bootloader_include_parser",
+      "name" : "Bootloader Include Parser",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "MSLA"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:bit",
+      "name" : "Bit Operations Library",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:mbedtls_cipher_ctr",
+      "name" : "CTR Mode",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Apache-2.0"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "mbedtls_cipher_ctr:v3.6.2",
+          "name" : "Mbed TLS",
+          "version" : "v3.6.2",
+          "supplier" : {
+            "name" : "Trusted Firmware"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://github.com/Mbed-TLS/mbedtls.git"
+          } ],
+          "pedigree" : {
+            "notes" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:psa_driver_common",
+      "name" : "PSA Driver Common Source Code",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:mbedtls_aes",
+      "name" : "AES Block Cipher",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Apache-2.0"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "mbedtls_aes:v3.6.2",
+          "name" : "Mbed TLS",
+          "version" : "v3.6.2",
+          "supplier" : {
+            "name" : "Trusted Firmware"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://github.com/Mbed-TLS/mbedtls.git"
+          } ],
+          "pedigree" : {
+            "notes" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:sl_fault_injection_hardening",
+      "name" : "Fault Injection Hardening",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib AND BSD-3-Clause"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "sl_fault_injection_hardening:v1.5",
+          "name" : "TrustedFirmware-M (TF-M)",
+          "version" : "v1.5",
+          "supplier" : {
+            "name" : "Trusted Firmware"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://review.trustedfirmware.org/TF-M/trusted-firmware-m.git"
+          } ],
+          "pedigree" : {
+            "notes" : "Trusted Firmware for M profile Arm CPUs"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:mbedtls_slcrypto_driver",
+      "name" : "Drivers for Silicon Labs Crypto Acceleration",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:trustzone_secure",
+      "name" : "TrustZone Secure",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:se_manager",
+      "name" : "SE Manager",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_ldma",
+      "name" : "LDMA",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib",
+      "name" : "EMLIB Peripheral HAL",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:psa_crypto_config",
+      "name" : "Configuration",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib AND Apache-2.0"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "psa_crypto_config:v3.6.2",
+          "name" : "Mbed TLS",
+          "version" : "v3.6.2",
+          "supplier" : {
+            "name" : "Trusted Firmware"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://github.com/Mbed-TLS/mbedtls.git"
+          } ],
+          "pedigree" : {
+            "notes" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:memory_manager_region",
+      "name" : "Memory Manager region",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_msc",
+      "name" : "MSC",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_opamp",
+      "name" : "OPAMP",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:se_manager_crypto",
+      "name" : "Crypto",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:enum",
+      "name" : "Enumerations",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_pcnt",
+      "name" : "PCNT",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_wdog",
+      "name" : "WDOG",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_gpcrc",
+      "name" : "GPCRC",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_system",
+      "name" : "SYSTEM",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:code_classification",
+      "name" : "Code Classification",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_usart",
+      "name" : "USART",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:memory_manager",
+      "name" : "Memory Manager",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:status",
+      "name" : "Status Codes Definitions",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_chip",
+      "name" : "CHIP",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_gpio",
+      "name" : "GPIO",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_eusart",
+      "name" : "EUSART",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_vdac",
+      "name" : "VDAC",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_smu",
+      "name" : "SMU",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:memory_manager_pool",
+      "name" : "Memory Manager Memory Pool",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_letimer",
+      "name" : "LETIMER",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_acmp",
+      "name" : "ACMP",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:mbedtls_slcrypto",
+      "name" : "Silicon Labs Mbed TLS support",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:sl_assert",
+      "name" : "Assert Functions",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:brd2703a_config",
+      "name" : "brd2703a config",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:component_catalog",
+      "name" : "Component Catalog",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_emu",
+      "name" : "EMU",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_cmu",
+      "name" : "CMU",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_burtc",
+      "name" : "BURTC",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_syscfg",
+      "name" : "SYSCFG",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:psa_se_driver",
+      "name" : "PSA SE Driver Source Code",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_common",
+      "name" : "Common Headers",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:mbedtls_core",
+      "name" : "Mbed TLS",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib AND Apache-2.0"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "mbedtls_core:v3.6.2",
+          "name" : "Mbed TLS",
+          "version" : "v3.6.2",
+          "supplier" : {
+            "name" : "Trusted Firmware"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://github.com/Mbed-TLS/mbedtls.git"
+          } ],
+          "pedigree" : {
+            "notes" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:sl_core",
+      "name" : "core",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:mbedtls_platform_dynamic_memory_allocation_config_default",
+      "name" : "Default dynamic memory allocation macros for mbedtls",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib AND Apache-2.0"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "mbedtls_platform_dynamic_memory_allocation_config_default:v3.6.2",
+          "name" : "Mbed TLS",
+          "version" : "v3.6.2",
+          "supplier" : {
+            "name" : "Trusted Firmware"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://github.com/Mbed-TLS/mbedtls.git"
+          } ],
+          "pedigree" : {
+            "notes" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:cmsis_core",
+      "name" : "CMSIS-Core",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Apache 2.0"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "cmsis_core:5.8.0",
+          "name" : "CMSIS_5",
+          "version" : "5.8.0",
+          "supplier" : {
+            "name" : "ARM-software"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://github.com/ARM-software/CMSIS_5"
+          } ],
+          "purl" : "pkg:github/ARM-software/CMSIS_5@5.8.0",
+          "pedigree" : {
+            "notes" : "The CMSIS is a set of tools, APIs, frameworks, and work flows"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_timer",
+      "name" : "TIMER",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_core",
+      "name" : "CORE",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_prs",
+      "name" : "PRS",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:psa_driver",
+      "name" : "Drivers for Crypto Acceleration",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:psa_crypto_common",
+      "name" : "Common",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Apache-2.0"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "psa_crypto_common:v3.6.2",
+          "name" : "Mbed TLS",
+          "version" : "v3.6.2",
+          "supplier" : {
+            "name" : "Trusted Firmware"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://github.com/Mbed-TLS/mbedtls.git"
+          } ],
+          "pedigree" : {
+            "notes" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:emlib_dbg",
+      "name" : "DBG",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:sli_psec_osal",
+      "name" : "OS Abstraction Layer",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:mbedtls_config",
+      "name" : "Configuration",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib AND Apache-2.0"
+      } ],
+      "pedigree" : {
+        "ancestors" : [ {
+          "scope" : "required",
+          "type" : "library",
+          "bom-ref" : "mbedtls_config:v3.6.2",
+          "name" : "Mbed TLS",
+          "version" : "v3.6.2",
+          "supplier" : {
+            "name" : "Trusted Firmware"
+          },
+          "externalReferences" : [ {
+            "type" : "website",
+            "url" : "https://github.com/Mbed-TLS/mbedtls.git"
+          } ],
+          "pedigree" : {
+            "notes" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+          }
+        } ]
+      }
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:sl_common",
+      "name" : "Common Functions",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:se_manager_mailbox",
+      "name" : "SE mailbox utilities",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:se_manager_config",
+      "name" : "Config",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2024.12.2:brd2703a",
+      "name" : "BRD2703A",
+      "version" : "2024.12.2",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    } ]
+  } ]
+}

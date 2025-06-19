@@ -1,0 +1,22 @@
+#CRC Codes for initially generated config files -- do not modify!
+btl_aes_ctr_stream_block_cfg.h=1546079111
+btl_apploader_config.h=-715304789
+btl_core_cfg.h=-663813276
+btl_debug_cfg.h=-555597884
+emlib_core_debug_config.h=1524820012
+psa_crypto_config.h=35522427
+sl_board_control_config.h=1942454455
+sl_core_config.h=-2018153270
+sl_device_init_dcdc_config.h=467347643
+sl_device_init_emu_config.h=1238190016
+sl_device_init_hfxo_config.h=1674360819
+sl_device_init_lfxo_config.h=767075749
+sl_fault_injection_hardening_cfg.h=1583405622
+sl_interrupt_manager_s2_config.h=2041388134
+sl_mbedtls_config.h=-1898672273
+sl_mbedtls_device_config.h=-1083250924
+sl_memory_config.h=-1480513113
+sl_memory_manager_config.h=181091816
+sl_memory_manager_region_config.h=-1223285826
+sl_rail_util_pa_config.h=-1360895740
+sl_rail_util_sequencer_config.h=2041758847

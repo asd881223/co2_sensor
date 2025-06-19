@@ -1,0 +1,213 @@
+#include "em_device.h"
+#include "em_chip.h"
+#include "sl_system_init.h"
+#include "sl_i2cspm.h"
+#include "em_gpio.h"
+#include "sl_sleeptimer.h"
+#include <stdio.h>
+
+#define CO2_I2C_ADDR                 0x68
+#define CO2_EN_PORT                  gpioPortA
+#define CO2_EN_PIN                   0
+
+#define WARMUP_DELAY_MS              10000
+#define STABILIZE_DELAY_MS           35
+#define DEFAULT_PERIOD_S             2       // 預設量測週期 (秒)
+#define EEPROM_UPDATE_DELAY_MS       25      // 寄存器更新延遲 (ms)
+
+// Calibration registers & commands
+#define ERROR_STATUS_LSB             0x01
+#define CALIBRATION_STATUS_REG       0x81
+#define CALIBRATION_COMMAND_MSB      0x82
+#define CALIBRATION_PREFIX           0x7C
+#define CALIBRATION_BACKGROUND_CMD   0x06    // 背景校正命令
+#define CALIBRATION_RESTORE_FACTORY  0x02
+#define CALIBRATION_STATUS_FLAG      0x20    // 背景校正完成標誌位
+#define ERROR_STATUS_LSB_CALIBRATION 0x80u   // 錯誤狀態標誌
+
+#define MEASUREMENT_MODE_REG         0x95
+#define CONTINUOUS_MODE              0x00u
+
+static void delay_ms(uint32_t ms) {
+  sl_sleeptimer_delay_millisecond(ms);
+}
+
+// 喚醒感測器
+static bool sensor_wakeup(uint8_t addr7) {
+  I2C_TransferSeq_TypeDef seq = {0};
+  seq.addr  = addr7 << 1;
+  seq.flags = I2C_FLAG_WRITE;
+  bool ok = (I2CSPM_Transfer(I2C0, &seq) == i2cTransferDone);
+  printf("[DEBUG] sensor_wakeup -> %s\r\n", ok ? "OK" : "FAIL");
+  return ok;
+}
+
+// 讀寄存器 (Write reg address then read len bytes)
+static bool sensor_read_reg(uint8_t addr7, uint8_t reg, uint8_t *buf, uint16_t len) {
+  I2C_TransferSeq_TypeDef seq = {0};
+  seq.addr        = addr7 << 1;
+  seq.flags       = I2C_FLAG_WRITE_READ;
+  seq.buf[0].data = &reg;
+  seq.buf[0].len  = 1;
+  seq.buf[1].data = buf;
+  seq.buf[1].len  = len;
+  bool ok = (I2CSPM_Transfer(I2C0, &seq) == i2cTransferDone);
+  printf("[DEBUG] read_reg(0x%02X,len=%u) -> %s\r\n", reg, len, ok ? "OK" : "FAIL");
+  if (ok && len == 1) printf("[DEBUG] Reg 0x%02X = 0x%02X\r\n", reg, buf[0]);
+  return ok;
+}
+
+// 寫入單一寄存器
+static bool sensor_write_reg1(uint8_t addr7, uint8_t reg, uint8_t value) {
+  uint8_t buf[2] = { reg, value };
+  I2C_TransferSeq_TypeDef seq = {0};
+  seq.addr        = addr7 << 1;
+  seq.flags       = I2C_FLAG_WRITE;
+  seq.buf[0].data = buf;
+  seq.buf[0].len  = 2;
+  bool ok = (I2CSPM_Transfer(I2C0, &seq) == i2cTransferDone);
+  printf("[DEBUG] write_reg1(0x%02X=0x%02X) -> %s\r\n", reg, value, ok ? "OK" : "FAIL");
+  return ok;
+}
+
+// 寫入背景校正命令 (MSB + PREFIX + CMD)
+static bool sensor_write_cmd(uint8_t addr7, uint8_t msb_reg, uint8_t prefix, uint8_t cmd) {
+  uint8_t buf[3] = { msb_reg, prefix, cmd };
+  I2C_TransferSeq_TypeDef seq = {0};
+  seq.addr        = addr7 << 1;
+  seq.flags       = I2C_FLAG_WRITE;
+  seq.buf[0].data = buf;
+  seq.buf[0].len  = 3;
+  bool ok = (I2CSPM_Transfer(I2C0, &seq) == i2cTransferDone);
+  printf("[DEBUG] write_cmd(MSB=0x%02X,PRE=0x%02X,CMD=0x%02X) -> %s\r\n",
+         msb_reg, prefix, cmd, ok ? "OK" : "FAIL");
+  return ok;
+}
+
+// 讀取初始狀態 (24-byte)
+static bool read_initial_state(uint8_t addr7,
+                               uint8_t state[24],
+                               uint16_t *abc_hours,
+                               uint16_t *meas_period,
+                               uint16_t *num_samples)
+{
+  if (!sensor_read_reg(addr7, 0xC4, state, 24)) return false;
+  *abc_hours   = ((uint16_t)state[0] << 8) | state[1];
+  *meas_period = ((uint16_t)state[2] << 8) | state[3];
+  *num_samples = ((uint16_t)state[4] << 8) | state[5];
+  return true;
+}
+
+// 讀取原始量測 (7-byte)
+static bool read_raw7(uint8_t addr7,
+                      uint8_t raw7[7],
+                      uint16_t *co2)
+{
+  if (!sensor_read_reg(addr7, 0x01, raw7, 7)) return false;
+  *co2 = ((uint16_t)raw7[5] << 8) | raw7[6];
+  return true;
+}
+
+// 背景校正流程
+static bool background_calibration(uint8_t addr7, uint16_t period_s) {
+  printf("[DEBUG] background_calibration start, period_s=%u\r\n", period_s);
+  if (!sensor_wakeup(addr7)) return false;
+  // 清除舊校正
+  if (!sensor_write_reg1(addr7, CALIBRATION_STATUS_REG, 0x00u)) return false;
+  delay_ms(EEPROM_UPDATE_DELAY_MS);
+  // 發起背景校正命令
+  if (!sensor_write_cmd(addr7,
+                         CALIBRATION_COMMAND_MSB,
+                         CALIBRATION_PREFIX,
+                         CALIBRATION_BACKGROUND_CMD)) return false;
+  // 等待完成 (最多三個週期)
+  for (int i = 0; i < 3; i++) {
+    printf("[DEBUG] calibration loop %d\r\n", i);
+    delay_ms(period_s * 1000);
+    // 檢查錯誤標誌
+    uint8_t err;
+    if (!sensor_read_reg(addr7, ERROR_STATUS_LSB, &err, 1)) return false;
+    if (err & ERROR_STATUS_LSB_CALIBRATION) {
+      printf("[DEBUG] ERROR_STATUS_LSB err=0x%02X\r\n", err);
+      return false;
+    }
+    // 檢查校正完成旗標
+    uint8_t status;
+    if (!sensor_read_reg(addr7, CALIBRATION_STATUS_REG, &status, 1)) return false;
+    if (status & CALIBRATION_STATUS_FLAG) {
+      printf("[DEBUG] CALIBRATION_STATUS_REG status=0x%02X (done)\r\n", status);
+      return true;
+    }
+  }
+  printf("Calibration timeout after %u seconds\r\n", period_s * 3);
+  return false;
+}
+
+// 校正整合函式
+static void calibrate_co2_sensor(uint16_t period_s) {
+  printf("Starting sensor calibration...\r\n");
+  if (!sensor_wakeup(CO2_I2C_ADDR)) {
+    printf("ERROR: wakeup failed\r\n");
+    return;
+  }
+  if (!background_calibration(CO2_I2C_ADDR, period_s)) {
+    printf("ERROR: background calibration failed\r\n");
+  }
+}
+
+// printf -> VCOM
+extern "C" int __io_putchar(int ch) {
+  EUSART0->TXDATA = (uint8_t)ch;
+  while (!(EUSART0->STATUS & EUSART_STATUS_TXC)) {}
+  return ch;
+}
+
+int main(void) {
+  CHIP_Init();
+  sl_system_init();
+
+  // 上電 & 暖機
+  GPIO_PinModeSet(CO2_EN_PORT, CO2_EN_PIN, gpioModePushPull, 1);
+  printf("Warming up sensor (%ums)...\r\n", WARMUP_DELAY_MS);
+  delay_ms(WARMUP_DELAY_MS);
+
+  // 喚醒
+  if (!sensor_wakeup(CO2_I2C_ADDR)) {
+    printf("ERROR: wake failed\r\n");
+    return -1;
+  }
+  delay_ms(20);
+
+  // 校正
+  calibrate_co2_sensor(DEFAULT_PERIOD_S);
+
+  // 讀取初始狀態
+  uint8_t state[24];
+  uint16_t abc_hours=0, meas_period=0, num_samples=0;
+  if (read_initial_state(CO2_I2C_ADDR, state,
+                         &abc_hours, &meas_period, &num_samples)) {
+    printf("Initial state: Period=%us, Samples=%u, ABC Hours=%u\r\n",
+           meas_period, num_samples, abc_hours);
+    if (meas_period==0) { meas_period=DEFAULT_PERIOD_S; printf("[DEBUG] fallback period=%us\r\n", meas_period);}
+  } else {
+    printf("WARNING: failed read state, use default %us\r\n", DEFAULT_PERIOD_S);
+    meas_period=DEFAULT_PERIOD_S;
+  }
+
+  // 持續量測
+  while(1) {
+    uint8_t cmd=0xC3;
+    I2C_TransferSeq_TypeDef seq={0};
+    seq.addr=CO2_I2C_ADDR<<1;
+    seq.flags=I2C_FLAG_WRITE;
+    seq.buf[0].data=&cmd;
+    seq.buf[0].len=1;
+    if(I2CSPM_Transfer(I2C0,&seq)!=i2cTransferDone){ printf("ERROR: trigger failed\r\n"); break; }
+    delay_ms(STABILIZE_DELAY_MS);
+    uint8_t raw7[7]; uint16_t co2;
+    if(read_raw7(CO2_I2C_ADDR,raw7,&co2)) printf("CO2: %u ppm\r\n", co2); else printf("ERROR: read raw7\r\n");
+    delay_ms(meas_period*1000);
+  }
+
+  return 0;
+}

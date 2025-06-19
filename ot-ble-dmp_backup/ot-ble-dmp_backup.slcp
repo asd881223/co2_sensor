@@ -1,0 +1,100 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: ot-ble-dmp_backup
+label: ot-ble-dmp_backup
+description: |
+  This is a simple application to test DMP (Dynamic MultiProtocol) with OpenThread and Bluetooth running on FreeRTOS.
+category: OpenThread Examples
+filter:
+- name: Capability
+  value: [Multiprotocol]
+- name: Device Type
+  value: [SoC]
+- name: Project Difficulty
+  value: [Advanced]
+- name: Wireless Technology
+  value: [Bluetooth, Thread]
+package: OpenThread
+quality: production
+readme:
+- {path: README.md}
+- {path: README.md}
+source:
+- {path: main.c}
+- {path: app.c}
+- {path: bluetooth_event_callback.c}
+tag: [prebuilt_demo, 'hardware:device:flash:768']
+include:
+- path: .
+  file_list:
+  - {path: app.h}
+  - {path: reset_util.h}
+sdk: {id: simplicity_sdk, version: 2024.12.2}
+toolchain_settings: []
+component:
+- {id: EFR32MG24B210F1536IM48}
+- {id: app_assert}
+- {id: app_log}
+- {id: bluetooth_feature_connection}
+- {id: bluetooth_feature_gap}
+- {id: bluetooth_feature_gatt}
+- {id: bluetooth_feature_gatt_server}
+- {id: bluetooth_feature_legacy_advertiser}
+- {id: bluetooth_feature_legacy_scanner}
+- {id: bluetooth_feature_nvm}
+- {id: bluetooth_feature_sm}
+- {id: bluetooth_feature_system}
+- {id: bluetooth_stack}
+- {id: bootloader_interface}
+- {id: brd2703a_a02}
+- {id: clock_manager}
+- {id: freertos}
+- {id: freertos_heap_3}
+- {id: gatt_configuration}
+- instance: [mikroe]
+  id: i2cspm
+- {id: iostream_recommended_console}
+- {id: nvm3_lib}
+- {id: ot_cli_source}
+- {id: ot_crash_handler}
+- {id: ot_stack_ftd}
+- {id: rail_lib_multiprotocol}
+- {id: rail_util_pti}
+- instance: [btn0, btn1]
+  id: simple_button
+configuration:
+- {name: SL_BOARD_ENABLE_VCOM, value: '1'}
+- {name: SL_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED, value: '1'}
+- {name: SL_MBEDTLS_KEY_EXCHANGE_PSK_ENABLED, value: '1'}
+- condition: [iostream_usart]
+  name: SL_IOSTREAM_USART_VCOM_RX_BUFFER_SIZE
+  value: '128'
+- condition: [iostream_eusart]
+  name: SL_IOSTREAM_EUSART_VCOM_RX_BUFFER_SIZE
+  value: '128'
+- {name: SL_HEAP_SIZE, value: '16384'}
+- {name: SL_STACK_SIZE, value: '4608'}
+- {name: OPENTHREAD_CONFIG_TMF_NETDIAG_CLIENT_ENABLE, value: '0'}
+- condition: [ot_rtt_log]
+  name: OPENTHREAD_CONFIG_LOG_OUTPUT
+  value: OPENTHREAD_CONFIG_LOG_OUTPUT_PLATFORM_DEFINED
+- condition: [ot_rtt_log]
+  name: BUFFER_SIZE_UP
+  value: '768'
+- condition: [ot_rtt_log]
+  name: BUFFER_SIZE_DOWN
+  value: '0'
+- {name: configTIMER_TASK_PRIORITY, value: '53'}
+- {name: CIRCULAR_QUEUE_LEN_MAX, value: '16'}
+- condition: [iostream_usart]
+  name: SL_IOSTREAM_USART_VCOM_FLOW_CONTROL_TYPE
+  value: usartHwFlowControlCtsAndRts
+- condition: [iostream_eusart]
+  name: SL_IOSTREAM_EUSART_VCOM_FLOW_CONTROL_TYPE
+  value: SL_IOSTREAM_EUSART_UART_FLOW_CTRL_CTS_RTS
+- condition: [toolchain_lto]
+  name: SL_OPENTHREAD_SERIAL_TASK_MEM_SIZE
+  value: '3072'
+ui_hints:
+  highlight:
+  - {path: ./README.md, focus: true}
+

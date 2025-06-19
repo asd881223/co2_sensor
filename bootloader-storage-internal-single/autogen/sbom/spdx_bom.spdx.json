@@ -1,0 +1,1071 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.3",
+  "dataLicense" : "CC0-1.0",
+  "name" : "Silicon-Laboratories",
+  "documentNamespace" : "https://silabs.com",
+  "creationInfo" : {
+    "created" : "2025-06-17T02:25:25.457647640Z",
+    "creators" : [ "Tool: Silicon Labs Configuration Tooling" ]
+  },
+  "comment" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)",
+  "documentDescribes" : [ "SPDXRef-simplicity_sdk-2024.12.2" ],
+  "packages" : [ {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "name" : "Simplicity SDK Suite",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc."
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-EFR32MG24B210F1536IM48",
+    "name" : "EFR32MG24B210F1536IM48",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_aes_sha_ecdsa",
+    "name" : "Crypto",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA AND APACHE-2.0"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_common_storage_single",
+    "name" : "Common Storage (single storage slot only)",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_core",
+    "name" : "Bootloader Core",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_crc",
+    "name" : "Cyclic Redundancy Check",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_debug",
+    "name" : "Debug",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_image_parser",
+    "name" : "Image Parser",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_internal_storage",
+    "name" : "Internal Storage",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_storage_slots",
+    "name" : "Bootloader Storage Slot Setup",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_token_management",
+    "name" : "Token Management",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-brd2703a_a02",
+    "name" : "BRD2703A rev A02",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_source",
+    "name" : "Source Code",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Apache-2.0"
+  }, {
+    "SPDXID" : "SPDXRef-mbedtls_source-v3.6.2",
+    "name" : "Mbed TLS",
+    "versionInfo" : "v3.6.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Trusted Firmware",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
+    "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_aes_ctr_stream_block_cfg",
+    "name" : "Bootloader AES CTR Stream Block Config",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_i2c",
+    "name" : "I2C",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_rmu",
+    "name" : "RMU",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_iadc",
+    "name" : "IADC",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_include_parser",
+    "name" : "Bootloader Include Parser",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-bit",
+    "name" : "Bit Operations Library",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_cipher_ctr",
+    "name" : "CTR Mode",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Apache-2.0"
+  }, {
+    "SPDXID" : "SPDXRef-mbedtls_cipher_ctr-v3.6.2",
+    "name" : "Mbed TLS",
+    "versionInfo" : "v3.6.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Trusted Firmware",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
+    "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-psa_driver_common",
+    "name" : "PSA Driver Common Source Code",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_aes",
+    "name" : "AES Block Cipher",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Apache-2.0"
+  }, {
+    "SPDXID" : "SPDXRef-mbedtls_aes-v3.6.2",
+    "name" : "Mbed TLS",
+    "versionInfo" : "v3.6.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Trusted Firmware",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
+    "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-sl_fault_injection_hardening",
+    "name" : "Fault Injection Hardening",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib AND BSD-3-Clause"
+  }, {
+    "SPDXID" : "SPDXRef-sl_fault_injection_hardening-v1.5",
+    "name" : "TrustedFirmware-M (TF-M)",
+    "versionInfo" : "v1.5",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Trusted Firmware",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://review.trustedfirmware.org/TF-M/trusted-firmware-m.git",
+    "comment" : "Trusted Firmware for M profile Arm CPUs"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_slcrypto_driver",
+    "name" : "Drivers for Silicon Labs Crypto Acceleration",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-trustzone_secure",
+    "name" : "TrustZone Secure",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-se_manager",
+    "name" : "SE Manager",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_ldma",
+    "name" : "LDMA",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib",
+    "name" : "EMLIB Peripheral HAL",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-psa_crypto_config",
+    "name" : "Configuration",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib AND Apache-2.0"
+  }, {
+    "SPDXID" : "SPDXRef-psa_crypto_config-v3.6.2",
+    "name" : "Mbed TLS",
+    "versionInfo" : "v3.6.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Trusted Firmware",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
+    "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-memory_manager_region",
+    "name" : "Memory Manager region",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_msc",
+    "name" : "MSC",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_opamp",
+    "name" : "OPAMP",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-se_manager_crypto",
+    "name" : "Crypto",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-enum",
+    "name" : "Enumerations",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_pcnt",
+    "name" : "PCNT",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_wdog",
+    "name" : "WDOG",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_gpcrc",
+    "name" : "GPCRC",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_system",
+    "name" : "SYSTEM",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-code_classification",
+    "name" : "Code Classification",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_usart",
+    "name" : "USART",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-memory_manager",
+    "name" : "Memory Manager",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-status",
+    "name" : "Status Codes Definitions",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_chip",
+    "name" : "CHIP",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_gpio",
+    "name" : "GPIO",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_eusart",
+    "name" : "EUSART",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_vdac",
+    "name" : "VDAC",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_smu",
+    "name" : "SMU",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-memory_manager_pool",
+    "name" : "Memory Manager Memory Pool",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_letimer",
+    "name" : "LETIMER",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_acmp",
+    "name" : "ACMP",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_slcrypto",
+    "name" : "Silicon Labs Mbed TLS support",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-sl_assert",
+    "name" : "Assert Functions",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-brd2703a_config",
+    "name" : "brd2703a config",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-component_catalog",
+    "name" : "Component Catalog",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_emu",
+    "name" : "EMU",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_cmu",
+    "name" : "CMU",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_burtc",
+    "name" : "BURTC",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_syscfg",
+    "name" : "SYSCFG",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-psa_se_driver",
+    "name" : "PSA SE Driver Source Code",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_common",
+    "name" : "Common Headers",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_core",
+    "name" : "Mbed TLS",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib AND Apache-2.0"
+  }, {
+    "SPDXID" : "SPDXRef-mbedtls_core-v3.6.2",
+    "name" : "Mbed TLS",
+    "versionInfo" : "v3.6.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Trusted Firmware",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
+    "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-sl_core",
+    "name" : "core",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_platform_dynamic_memory_allocation_config_default",
+    "name" : "Default dynamic memory allocation macros for mbedtls",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib AND Apache-2.0"
+  }, {
+    "SPDXID" : "SPDXRef-mbedtls_platform_dynamic_memory_allocation_config_default-v3.6.2",
+    "name" : "Mbed TLS",
+    "versionInfo" : "v3.6.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Trusted Firmware",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
+    "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-cmsis_core",
+    "name" : "CMSIS-Core",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Apache 2.0"
+  }, {
+    "SPDXID" : "SPDXRef-cmsis_core-5.8.0",
+    "name" : "CMSIS_5",
+    "versionInfo" : "5.8.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: ARM-software",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://github.com/ARM-software/CMSIS_5",
+    "externalRefs" : [ {
+      "referenceCategory" : "PACKAGE-MANAGER",
+      "referenceLocator" : "pkg:github/ARM-software/CMSIS_5@5.8.0",
+      "referenceType" : "purl"
+    } ],
+    "comment" : "The CMSIS is a set of tools, APIs, frameworks, and work flows"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_timer",
+    "name" : "TIMER",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_core",
+    "name" : "CORE",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_prs",
+    "name" : "PRS",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-psa_driver",
+    "name" : "Drivers for Crypto Acceleration",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-psa_crypto_common",
+    "name" : "Common",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Apache-2.0"
+  }, {
+    "SPDXID" : "SPDXRef-psa_crypto_common-v3.6.2",
+    "name" : "Mbed TLS",
+    "versionInfo" : "v3.6.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Trusted Firmware",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
+    "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_dbg",
+    "name" : "DBG",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-sli_psec_osal",
+    "name" : "OS Abstraction Layer",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_config",
+    "name" : "Configuration",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib AND Apache-2.0"
+  }, {
+    "SPDXID" : "SPDXRef-mbedtls_config-v3.6.2",
+    "name" : "Mbed TLS",
+    "versionInfo" : "v3.6.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Trusted Firmware",
+    "originator" : "Organization: NOASSERTION",
+    "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
+    "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-sl_common",
+    "name" : "Common Functions",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-se_manager_mailbox",
+    "name" : "SE mailbox utilities",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-se_manager_config",
+    "name" : "Config",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2024.12.2-brd2703a",
+    "name" : "BRD2703A",
+    "versionInfo" : "2024.12.2",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-DOCUMENT",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relationshipType" : "DESCRIBES"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-EFR32MG24B210F1536IM48",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_aes_sha_ecdsa",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_common_storage_single",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_core",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_crc",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_debug",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_image_parser",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_internal_storage",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_storage_slots",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_token_management",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-brd2703a_a02",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_source",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_source",
+    "relatedSpdxElement" : "SPDXRef-mbedtls_source-v3.6.2",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_aes_ctr_stream_block_cfg",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_i2c",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_rmu",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_iadc",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bootloader_include_parser",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-bit",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_cipher_ctr",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_cipher_ctr",
+    "relatedSpdxElement" : "SPDXRef-mbedtls_cipher_ctr-v3.6.2",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-psa_driver_common",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_aes",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_aes",
+    "relatedSpdxElement" : "SPDXRef-mbedtls_aes-v3.6.2",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-sl_fault_injection_hardening",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-sl_fault_injection_hardening",
+    "relatedSpdxElement" : "SPDXRef-sl_fault_injection_hardening-v1.5",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_slcrypto_driver",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-trustzone_secure",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-se_manager",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_ldma",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-psa_crypto_config",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-psa_crypto_config",
+    "relatedSpdxElement" : "SPDXRef-psa_crypto_config-v3.6.2",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-memory_manager_region",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_msc",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_opamp",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-se_manager_crypto",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-enum",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_pcnt",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_wdog",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_gpcrc",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_system",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-code_classification",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_usart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-memory_manager",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-status",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_chip",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_gpio",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_eusart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_vdac",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_smu",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-memory_manager_pool",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_letimer",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_acmp",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_slcrypto",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-sl_assert",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-brd2703a_config",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-component_catalog",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_emu",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_cmu",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_burtc",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_syscfg",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-psa_se_driver",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_common",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_core",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_core",
+    "relatedSpdxElement" : "SPDXRef-mbedtls_core-v3.6.2",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-sl_core",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_platform_dynamic_memory_allocation_config_default",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_platform_dynamic_memory_allocation_config_default",
+    "relatedSpdxElement" : "SPDXRef-mbedtls_platform_dynamic_memory_allocation_config_default-v3.6.2",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-cmsis_core",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-cmsis_core",
+    "relatedSpdxElement" : "SPDXRef-cmsis_core-5.8.0",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_timer",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_core",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_prs",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-psa_driver",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-psa_crypto_common",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-psa_crypto_common",
+    "relatedSpdxElement" : "SPDXRef-psa_crypto_common-v3.6.2",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-emlib_dbg",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-sli_psec_osal",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_config",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2-mbedtls_config",
+    "relatedSpdxElement" : "SPDXRef-mbedtls_config-v3.6.2",
+    "relationshipType" : "ANCESTOR_OF"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-sl_common",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-se_manager_mailbox",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-se_manager_config",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2024.12.2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2024.12.2-brd2703a",
+    "relationshipType" : "CONTAINS"
+  } ]
+}

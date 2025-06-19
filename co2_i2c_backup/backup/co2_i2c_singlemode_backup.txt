@@ -1,0 +1,154 @@
+#include "em_device.h"
+#include "em_chip.h"
+#include "sl_system_init.h"
+#include "sl_i2cspm.h"
+#include "em_gpio.h"
+#include "sl_sleeptimer.h"
+#include <stdio.h>
+
+#define CO2_I2C_ADDR        0x68
+#define CO2_EN_PORT         gpioPortA
+#define CO2_EN_PIN          0
+
+#define WARMUP_DELAY_MS     10000
+#define STABILIZE_DELAY_MS  35
+
+static void delay_ms(uint32_t ms) {
+  sl_sleeptimer_delay_millisecond(ms);
+}
+
+// === 讀 24-byte 初始狀態 ===
+static bool read_initial_state(uint8_t addr7,
+                               uint8_t state[24],
+                               uint16_t *abc_hours,
+                               uint16_t *meas_period,
+                               uint16_t *num_samples)
+{
+  uint8_t reg = 0xC4;  // 初始狀態寄存器起始位址
+  I2C_TransferSeq_TypeDef seq;
+  seq.addr        = addr7 << 1;
+  seq.flags       = I2C_FLAG_WRITE_READ;
+  seq.buf[0].data = &reg;
+  seq.buf[0].len  = 1;
+  seq.buf[1].data = state;
+  seq.buf[1].len  = 24;
+
+  if (I2CSPM_Transfer(I2C0, &seq) != i2cTransferDone) {
+    return false;
+  }
+
+  // 解析前三個欄位
+  *abc_hours   = ((uint16_t)state[0] << 8) | state[1];
+  *meas_period = ((uint16_t)state[2] << 8) | state[3];
+  *num_samples = ((uint16_t)state[4] << 8) | state[5];
+  return true;
+}
+
+// === 讀 7-byte 原始量測 ===
+static bool read_raw7(uint8_t addr7,
+                      uint8_t raw7[7],
+                      uint16_t *co2)
+{
+  uint8_t reg = 0x01;  // 原始量測起始位址
+  I2C_TransferSeq_TypeDef seq;
+  seq.addr        = addr7 << 1;
+  seq.flags       = I2C_FLAG_WRITE_READ;
+  seq.buf[0].data = &reg;
+  seq.buf[0].len  = 1;
+  seq.buf[1].data = raw7;
+  seq.buf[1].len  = 7;
+
+  if (I2CSPM_Transfer(I2C0, &seq) != i2cTransferDone) {
+    return false;
+  }
+
+  // raw7[5..6] 為 CO₂ high/low byte
+  *co2 = ((uint16_t)raw7[5] << 8) | raw7[6];
+  return true;
+}
+
+// printf -> VCOM
+extern "C" int __io_putchar(int ch) {
+  EUSART0->TXDATA = (uint8_t)ch;
+  while (!(EUSART0->STATUS & EUSART_STATUS_TXC)) {}
+  return ch;
+}
+
+int main(void) {
+  CHIP_Init();
+  sl_system_init();
+
+  // 1) 上電 & 暖機
+  GPIO_PinModeSet(CO2_EN_PORT, CO2_EN_PIN, gpioModePushPull, 1);
+  printf("Warming up sensor (%ums)...\r\n", WARMUP_DELAY_MS);
+  delay_ms(WARMUP_DELAY_MS);
+
+  // 2) 喚醒
+  {
+    I2C_TransferSeq_TypeDef seqWake;
+    seqWake.addr        = CO2_I2C_ADDR << 1;
+    seqWake.flags       = I2C_FLAG_WRITE;
+    seqWake.buf[0].data = nullptr;
+    seqWake.buf[0].len  = 0;
+    seqWake.buf[1].data = nullptr;
+    seqWake.buf[1].len  = 0;
+    if (I2CSPM_Transfer(I2C0, &seqWake) != i2cTransferDone) {
+      printf("ERROR: wake failed\r\n");
+      return -1;
+    }
+  }
+  delay_ms(20);
+
+  // 3) 觸發單次量測
+  {
+    uint8_t cmd = 0xC3;
+    I2C_TransferSeq_TypeDef seqTrig;
+    seqTrig.addr        = CO2_I2C_ADDR << 1;
+    seqTrig.flags       = I2C_FLAG_WRITE;
+    seqTrig.buf[0].data = &cmd;
+    seqTrig.buf[0].len  = 1;
+    seqTrig.buf[1].data = nullptr;
+    seqTrig.buf[1].len  = 0;
+    if (I2CSPM_Transfer(I2C0, &seqTrig) != i2cTransferDone) {
+      printf("ERROR: trigger failed\r\n");
+      return -1;
+    }
+  }
+
+  // 4) 等待量測穩定
+  delay_ms(STABILIZE_DELAY_MS);
+
+  // 5) 讀取 & 印出 24-byte 狀態
+  {
+    uint8_t state[24];
+    uint16_t abc, period, samples;
+    if (read_initial_state(CO2_I2C_ADDR, state, &abc, &period, &samples)) {
+      printf("Initial 24-byte state: ");
+      for (int i = 0; i < 24; i++) {
+        printf("%02X ", state[i]);
+      }
+      printf("\r\nABC hours: %u, Period: %u s, Samples: %u\r\n",
+             abc, period, samples);
+    } else {
+      printf("ERROR: read initial state failed\r\n");
+    }
+  }
+
+  // 6) 讀取 & 印出 7-byte 原始量測
+  {
+    uint8_t raw7[7];
+    uint16_t co2;
+    if (read_raw7(CO2_I2C_ADDR, raw7, &co2)) {
+      printf("Raw7: ");
+      for (int i = 0; i < 7; i++) {
+        printf("%02X ", raw7[i]);
+      }
+      printf("→ CO2 = %u ppm\r\n", co2);
+    } else {
+      printf("ERROR: read raw7 failed\r\n");
+    }
+  }
+
+  // 7) 結束程式
+  return 0;
+}

@@ -1,0 +1,414 @@
+simplicity_sdk_2024.12.2/protocol/openthread/platform-abstraction/rtos/sl_ot_rtos_adaptation.o: \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/protocol/openthread/platform-abstraction/rtos/sl_ot_rtos_adaptation.c \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_openthread_ble_cli_config.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/toolchain/inc/sl_gcc_preinclude.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/openthread-core-config.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/config.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/include/sl_openthread_package_info.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/thread.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/dataset.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/instance.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/error.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/toolchain.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/logging.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/ip6.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/message.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/radio.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/crypto.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/link.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/commissioner.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/joiner.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/openthread-core-efr32-config.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sl_component_catalog.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_clock_manager_oscillator_config.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_openthread_features_config.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/board_config.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/em_device.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24b210f1536im48.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/core_cm33.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/cmsis_version.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/cmsis_compiler.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/cmsis_gcc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/interrupt_manager/inc/arm/cmsis_nvic_virtual.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/interrupt_manager/inc/sl_interrupt_manager.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_core.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_code_classification.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sli_code_classification.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_status.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/mpu_armv8.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/system_efr32mg24.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_code_classification.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_scratchpad.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_emu.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_cmu.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_hfrco.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_fsrco.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_dpll.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_lfxo.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_lfrco.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ulfrco.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_msc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_icache.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_prs.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_gpio.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_gpio_port.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ldma.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ldmaxbar.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_timer.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_usart.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_burtc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_i2c.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_syscfg.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_buram.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_gpcrc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_dcdc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_mailbox.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_eusart.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_sysrtc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_keyscan.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_mpahbram.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_aes.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_smu.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_letimer.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_iadc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_acmp.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_vdac.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_pcnt.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_hfxo.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_wdog.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_semailbox.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_mvp.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_devinfo.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_prs_signals.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_dma_descriptor.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ldmaxbar_defines.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/announce_sender.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/backbone_router.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_agent.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_router.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_routing.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_routing.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/channel_manager.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/channel_monitor.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/child_supervision.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/coap.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/commissioner.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/crypto.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dataset_updater.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dhcp6_client.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dhcp6_server.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/diag.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dns_client.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/ip6.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/misc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/coap.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/srp_server.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/srp_client.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dns_dso.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dnssd_server.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/history_tracker.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/ip6.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/joiner.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/link_metrics_manager.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/link_quality.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/link_raw.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/logging.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mac.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/time_sync.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/wakeup.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mdns.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mesh_diag.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mesh_forwarder.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_router.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/misc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mle.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/nat64.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/netdata_publisher.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/network_diagnostic.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/parent_search.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/ping_sender.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/platform.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/power_calibration.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/radio_link.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/secure_transport.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_agent.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/commissioner.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/joiner.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/sntp_client.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/srp_client.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/srp_server.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/time_sync.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/tmf.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/trel.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/wakeup.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/openthread-core-config-check.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/openthread-core-efr32-config-check.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/examples/platforms/openthread-system.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/tasklet.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/time.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/platform.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/private_access.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/build_info.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_mbedtls_config.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sli_mbedtls_config_autogen.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_mbedtls_support/config/sli_mbedtls_omnipresent.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_mbedtls_support/config/sli_mbedtls_acceleration.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_mbedtls_device_config.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sli_mbedtls_config_transform_autogen.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/psa_crypto_config.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sli_psa_config_autogen.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_mbedtls_support/config/sli_psa_acceleration.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sli_psa_builtin_config_autogen.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_psa.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_legacy.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_adjust_config_synonyms.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_adjust_config_dependencies.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_legacy_from_psa.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_adjust_auto_enabled.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_x509.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_ssl.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/check_config.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/RTOS2/Include/cmsis_os2.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/platform-efr32.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/emlib/inc/em_system.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/emlib/inc/em_system_generic.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/common/rail.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/common/rail_types.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/chip/efr32/efr32xg2x/rail_chip_specific.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/common/rail_features.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/common/rail_assert_error_codes.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/alarm.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/power_manager/inc/sl_power_manager.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_power_manager_config.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_slist.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/sleeptimer/inc/sl_sleeptimer.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_common.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_assert.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_enum.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/uart.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/rtos/sl_ot_rtos_adaptation.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_cmsis_os2_common.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_status.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/FreeRTOS.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/FreeRTOSConfig.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/RTE_Components.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/emlib/inc/em_assert.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_assert.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/projdefs.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/portable.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/deprecated_definitions.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/mpu_wrappers.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_openthread_rtos_config.h \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sl_ot_init.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/protocol/openthread/platform-abstraction/rtos/sl_ot_rtos_adaptation.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/sleep.h
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_openthread_ble_cli_config.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/toolchain/inc/sl_gcc_preinclude.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/openthread-core-config.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/config.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/include/sl_openthread_package_info.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/thread.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/dataset.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/instance.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/error.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/toolchain.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/logging.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/ip6.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/message.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/radio.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/crypto.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/link.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/commissioner.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/joiner.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/openthread-core-efr32-config.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sl_component_catalog.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_clock_manager_oscillator_config.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_openthread_features_config.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/board_config.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/em_device.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24b210f1536im48.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/core_cm33.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/cmsis_version.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/cmsis_compiler.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/cmsis_gcc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/interrupt_manager/inc/arm/cmsis_nvic_virtual.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/interrupt_manager/inc/sl_interrupt_manager.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_core.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_code_classification.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sli_code_classification.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_status.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include/mpu_armv8.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/system_efr32mg24.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_code_classification.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_scratchpad.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_emu.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_cmu.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_hfrco.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_fsrco.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_dpll.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_lfxo.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_lfrco.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ulfrco.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_msc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_icache.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_prs.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_gpio.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_gpio_port.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ldma.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ldmaxbar.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_timer.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_usart.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_burtc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_i2c.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_syscfg.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_buram.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_gpcrc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_dcdc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_mailbox.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_eusart.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_sysrtc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_keyscan.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_mpahbram.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_aes.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_smu.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_letimer.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_iadc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_acmp.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_vdac.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_pcnt.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_hfxo.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_wdog.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_semailbox.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_mvp.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_devinfo.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_prs_signals.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_dma_descriptor.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ldmaxbar_defines.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/announce_sender.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/backbone_router.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_agent.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_router.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_routing.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_routing.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/channel_manager.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/channel_monitor.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/child_supervision.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/coap.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/commissioner.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/crypto.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dataset_updater.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dhcp6_client.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dhcp6_server.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/diag.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dns_client.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/ip6.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/misc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/coap.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/srp_server.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/srp_client.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dns_dso.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/dnssd_server.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/history_tracker.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/ip6.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/joiner.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/link_metrics_manager.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/link_quality.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/link_raw.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/logging.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mac.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/time_sync.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/wakeup.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mdns.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mesh_diag.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mesh_forwarder.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_router.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/misc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/mle.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/nat64.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/netdata_publisher.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/network_diagnostic.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/parent_search.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/ping_sender.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/platform.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/power_calibration.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/radio_link.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/secure_transport.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/border_agent.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/commissioner.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/joiner.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/sntp_client.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/srp_client.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/srp_server.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/time_sync.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/tmf.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/trel.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/wakeup.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/src/core/config/openthread-core-config-check.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/openthread-core-efr32-config-check.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/examples/platforms/openthread-system.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/tasklet.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/time.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/platform.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/private_access.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/build_info.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_mbedtls_config.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sli_mbedtls_config_autogen.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_mbedtls_support/config/sli_mbedtls_omnipresent.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_mbedtls_support/config/sli_mbedtls_acceleration.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_mbedtls_device_config.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sli_mbedtls_config_transform_autogen.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/psa_crypto_config.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sli_psa_config_autogen.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_mbedtls_support/config/sli_psa_acceleration.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sli_psa_builtin_config_autogen.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_psa.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_legacy.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_adjust_config_synonyms.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_adjust_config_dependencies.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_legacy_from_psa.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/psa/crypto_adjust_auto_enabled.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_x509.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/config_adjust_ssl.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include/mbedtls/check_config.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/RTOS2/Include/cmsis_os2.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/platform-efr32.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/emlib/inc/em_system.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/emlib/inc/em_system_generic.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/common/rail.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/common/rail_types.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/chip/efr32/efr32xg2x/rail_chip_specific.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/common/rail_features.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/radio/rail_lib/common/rail_assert_error_codes.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/alarm.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/power_manager/inc/sl_power_manager.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_power_manager_config.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_slist.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/sleeptimer/inc/sl_sleeptimer.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_common.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_assert.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_enum.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/uart.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/rtos/sl_ot_rtos_adaptation.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_cmsis_os2_common.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_status.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/FreeRTOS.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/FreeRTOSConfig.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/RTE_Components.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/emlib/inc/em_assert.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc/sl_assert.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/projdefs.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/portable.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/deprecated_definitions.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/freertos/kernel/include/mpu_wrappers.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_openthread_rtos_config.h:
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/autogen/sl_ot_init.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/protocol/openthread/platform-abstraction/rtos/sl_ot_rtos_adaptation.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//protocol/openthread/platform-abstraction/efr32/sleep.h:

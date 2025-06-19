@@ -1,0 +1,54 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: co2_i2c_backup
+label: co2_i2c_backup
+description: |
+  This example project shows an empty configuration that can be used as a starting point to add components and functionality.
+category: Example|Platform
+filter:
+- name: Device Type
+  value: [SoC]
+- name: MCU
+  value: [32-bit MCU]
+- name: Project Difficulty
+  value: [Beginner]
+package: platform
+quality: production
+readme:
+- {path: readme.md}
+- {path: readme.md}
+source:
+- {path: app.cpp}
+- {path: main.cpp}
+include:
+- path: .
+  file_list:
+  - {path: app.h}
+sdk: {id: simplicity_sdk, version: 2024.12.2}
+toolchain_settings: []
+component:
+- {id: EFR32MG24B210F1536IM48}
+- {id: brd2703a_a02}
+- {id: clock_manager}
+- {id: cpp_support}
+- {id: device_init}
+- {id: emlib_eusart}
+- {id: emlib_usart}
+- {id: gpiointerrupt}
+- instance: [mikroe]
+  id: i2cspm
+- {id: iostream_retarget_stdio}
+- instance: [btn0, btn1]
+  id: simple_button
+- instance: [led0]
+  id: simple_led
+- {id: sl_system}
+- instance: [mikroe]
+  id: spidrv
+- instance: [vcom]
+  id: uartdrv_eusart
+define:
+- {name: DEBUG_EFM}
+ui_hints:
+  highlight:
+  - {path: readme.md, focus: true}
+

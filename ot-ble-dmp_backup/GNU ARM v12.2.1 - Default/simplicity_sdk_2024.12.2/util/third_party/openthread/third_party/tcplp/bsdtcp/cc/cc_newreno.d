@@ -1,0 +1,68 @@
+simplicity_sdk_2024.12.2/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/cc_newreno.o: \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/cc_newreno.c \
+ /home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_openthread_ble_cli_config.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/toolchain/inc/sl_gcc_preinclude.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../cc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_seq.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../tcplp.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/ip6.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/message.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/instance.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/error.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/toolchain.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/logging.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/radio.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/crypto.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/ip6.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/types.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp_fsm.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp_timer.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp_var.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/../lib/bitmap.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/../lib/cbuf.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/../lib/lbuf.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/cc.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/ip6.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp_var.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_var.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/cc_module.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_const.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_var.h \
+ /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_timer.h
+/home/fw3/SimplicityStudio/v5_workspace/ot-ble-dmp/config/sl_openthread_ble_cli_config.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/toolchain/inc/sl_gcc_preinclude.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../cc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_seq.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../tcplp.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/ip6.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/message.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/instance.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/error.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/toolchain.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/logging.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/radio.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/openthread/include/openthread/platform/crypto.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/ip6.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/types.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp_fsm.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp_timer.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp_var.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/../lib/bitmap.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/../lib/cbuf.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/../lib/lbuf.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/cc.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/ip6.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../../bsdtcp/tcp_var.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_var.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/cc_module.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_const.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_var.h:
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/util/third_party/openthread/third_party/tcplp/bsdtcp/cc/../tcp_timer.h:

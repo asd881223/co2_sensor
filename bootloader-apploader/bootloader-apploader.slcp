@@ -1,0 +1,33 @@
+# Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
+project_name: bootloader-apploader
+label: bootloader-apploader
+description: |
+  Standalone Bootloader using the Bluetooth AppLoader OTA DFU. This implements in-place application updates using Bluetooth connection.
+category: Example|Bootloader
+filter:
+- name: Device Type
+  value: [SoC]
+- name: MCU
+  value: [Bootloader]
+- name: Project Difficulty
+  value: [Advanced]
+package: bootloader
+quality: production
+readme:
+- {path: readme.md}
+- {path: readme.md}
+sdk: {id: simplicity_sdk, version: 2024.12.2}
+toolchain_settings: []
+component:
+- {id: EFR32MG24B210F1536IM48}
+- {id: bootloader_apploader}
+- {id: bootloader_core}
+- {id: bootloader_debug}
+- {id: bootloader_image_parser}
+- {id: brd2703a_a02}
+ui_hints:
+  highlight:
+  - {path: readme.md, focus: true}
+post_build:
+- {path: bootloader-apploader.slpb, profile: bootloader_series_2}
+

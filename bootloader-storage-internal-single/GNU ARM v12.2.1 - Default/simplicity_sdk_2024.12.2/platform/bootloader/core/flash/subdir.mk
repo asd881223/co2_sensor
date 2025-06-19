@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+/home/fw3/SimplicityStudio/SDKs/simplicity_sdk/platform/bootloader/core/flash/btl_internal_flash.c 
+
+OBJS += \
+./simplicity_sdk_2024.12.2/platform/bootloader/core/flash/btl_internal_flash.o 
+
+C_DEPS += \
+./simplicity_sdk_2024.12.2/platform/bootloader/core/flash/btl_internal_flash.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+simplicity_sdk_2024.12.2/platform/bootloader/core/flash/btl_internal_flash.o: /home/fw3/SimplicityStudio/SDKs/simplicity_sdk/platform/bootloader/core/flash/btl_internal_flash.c simplicity_sdk_2024.12.2/platform/bootloader/core/flash/subdir.mk
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU ARM C Compiler'
+	arm-none-eabi-gcc -g -gdwarf-2 -mcpu=cortex-m33 -mthumb -std=c18 '-DEFR32MG24B210F1536IM48=1' '-DSL_CODE_COMPONENT_SYSTEM=system' '-DSE_MANAGER_CONFIG_FILE="btl_aes_ctr_stream_block_cfg.h"' '-DBOOTLOADER_ENABLE=1' '-DBOOTLOADER_SECOND_STAGE=1' '-DSL_RAMFUNC_DISABLE=1' '-D__START=main' '-D__STARTUP_CLEAR_BSS=1' '-DBOOTLOADER_SUPPORT_INTERNAL_STORAGE=1' '-DBOOTLOADER_SUPPORT_STORAGE=1' '-DHARDWARE_BOARD_DEFAULT_RF_BAND_2400=1' '-DHARDWARE_BOARD_SUPPORTS_1_RF_BAND=1' '-DHARDWARE_BOARD_SUPPORTS_RF_BAND_2400=1' '-DHFXO_FREQ=39000000' '-DSL_BOARD_NAME="BRD2703A"' '-DSL_BOARD_REV="A02"' '-DSL_COMPONENT_CATALOG_PRESENT=1' '-DMBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h>' '-DMBEDTLS_PSA_CRYPTO_CLIENT=1' '-DMBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h>' '-DSL_CODE_COMPONENT_SE_MANAGER=se_manager' '-DSL_CODE_COMPONENT_CORE=core' '-DSL_CODE_COMPONENT_PSEC_OSAL=psec_osal' '-DSL_TRUSTZONE_SECURE=1' -I"/home/fw3/SimplicityStudio/v5_workspace/bootloader-storage-internal-single/config" -I"/home/fw3/SimplicityStudio/v5_workspace/bootloader-storage-internal-single/autogen" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/Device/SiliconLabs/EFR32MG24/Include" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/inc" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/bootloader" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/bootloader/debug" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/bootloader/parser" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/bootloader/api" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/bootloader/core/flash" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/bootloader/security" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/CMSIS/Core/Include" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/emlib/inc" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_mbedtls_support/config" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_mbedtls_support/config/preset" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_mbedtls_support/inc" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/include" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/mbedtls/library" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/memory_manager/inc" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/service/memory_manager/src" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sl_psa_driver/inc" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/se_manager/inc" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/trusted-firmware-m/lib/fih/inc" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/trusted-firmware-m/platform/include" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/common/toolchain/inc" -I"/home/fw3/SimplicityStudio/SDKs/simplicity_sdk//platform/security/sl_component/sli_psec_osal/inc" -Os -Wall -Wextra -ffunction-sections -fdata-sections -imacrossl_gcc_preinclude.h -mcmse -mfpu=fpv5-sp-d16 -mfloat-abi=hard -Wno-ignored-qualifiers -Wno-sign-compare -fno-lto --specs=nano.specs -c -fmessage-length=0 -MMD -MP -MF"simplicity_sdk_2024.12.2/platform/bootloader/core/flash/btl_internal_flash.d" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

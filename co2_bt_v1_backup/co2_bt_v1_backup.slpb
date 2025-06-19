@@ -1,0 +1,10 @@
+---
+parameters:
+- name: "build_dir"
+constants:
+- name: "project_name"
+  value: "co2_bt_v1_backup"
+steps:
+- task: "create_gbl"
+  output: "{{build_dir}}/{{project_name}}.gbl"
+  app: "{{build_dir}}/{{project_name}}.out"

@@ -1,0 +1,28 @@
+// ===== main.cpp =====
+#include "src/co2_sensor.h"
+#include "em_device.h"
+#include "em_chip.h"
+#include "sl_system_init.h"
+#include <stdio.h>
+
+int main(void) {
+    CHIP_Init();
+    sl_system_init();
+
+    co2_init();
+    co2_calibrate(2);
+
+    uint16_t abc, period, samples;
+    if (co2_read_initial_state(&abc, &period, &samples)) {
+        printf("State: Period=%us Samples=%u ABC=%u\r\n", period, samples, abc);
+    }
+
+    while (1) {
+        uint16_t ppm;
+        if (co2_read_ppm(&ppm)) {
+            printf("CO2: %u ppm\r\n", ppm);
+        }
+        delay_ms(2000);
+    }
+    return 0;
+}
